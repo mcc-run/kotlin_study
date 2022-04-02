@@ -42,7 +42,7 @@ fun main() {
         return queue[0]
     }
 
-    fun reverse(now: ListNode?, index: Int, k: Int): Boolean {
+    private fun reverse(now: ListNode?, index: Int, k: Int): Boolean {
 //        返回
         if (now == null){
             if (index == 0){
