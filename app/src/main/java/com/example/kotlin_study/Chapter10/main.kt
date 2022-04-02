@@ -11,6 +11,14 @@ fun main(){
 }
 
 
+/*
+* 协变：如果A是B的子类，且Generic<A>是且Generic<B>的子类型，那么且Generic<out T>可以说是个协变类
+* 协变：泛型可以作为返回类型，但不能作为参数类型
+* 逆变：若果A是B的子类，且Generic<B>是且Generic<A>的子类型，那么且Generic<in T>可以说是个逆变类
+* 逆变：泛型可以作为参数类型，但不能作为返回类型
+* */
+
+
 //泛型实化
 public inline fun <reified T> getType() = T::class.java
 
@@ -21,7 +29,3 @@ inline fun <reified T> startActivity(context: Context,block : Intent.() ->Unit){
     context.startActivity(intent)
 }
 
-/*
-* B是A的子类  在class<out T>中  class<B> 也是 class<A>  此时称为泛型的协变
-* B是A的子类  在class<in T>中  class<A> 是 class<B>  此时称为泛型的逆变
-* */
