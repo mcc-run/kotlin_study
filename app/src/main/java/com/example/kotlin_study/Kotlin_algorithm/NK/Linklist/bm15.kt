@@ -4,7 +4,7 @@ fun main(){
     deleteDuplicates(null)
 }
 
-fun deleteDuplicates(head: ListNode?): ListNode?  {
+private fun deleteDuplicates(head: ListNode?): ListNode?  {
     // write code here
     val number = IntArray(201)
     if (head == null)return null

@@ -62,7 +62,7 @@ private suspend fun printLaunch() {
 //    一般在测试环境下使用
 private fun runBlockingTest() {
     runBlocking {
-//        launch函数必须在谢成德作用域中才能调用，会在当前协程的作用域下创建子协程
+//        launch函数必须在协程作用域中才能调用，会在当前协程的作用域下创建子协程
 //        子协程：如果外层作用域的协程结束了，该作用域下的所有子协程会一同结束
         launch {
             printLaunch()
