@@ -1,4 +1,4 @@
-package com.example.kotlin_study.Kotlin_algorithm.NK.Tree
+package com.example.kotlin_study.Kotlin_algorithm.NK.Tree_kotlin
 
 fun hasPathSum(root: TreeNode?,sum: Int): Boolean  {
     // write code here

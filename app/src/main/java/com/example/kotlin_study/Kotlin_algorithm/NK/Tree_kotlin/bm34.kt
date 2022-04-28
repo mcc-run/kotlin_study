@@ -1,4 +1,4 @@
-package com.example.kotlin_study.Kotlin_algorithm.NK.Tree
+package com.example.kotlin_study.Kotlin_algorithm.NK.Tree_kotlin
 
 fun isValidBST(root: TreeNode?): Boolean  {
     // write code here

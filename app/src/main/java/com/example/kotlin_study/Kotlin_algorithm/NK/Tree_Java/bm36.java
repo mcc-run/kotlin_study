@@ -1,4 +1,6 @@
-package com.example.kotlin_study.Kotlin_algorithm.NK.Tree;
+package com.example.kotlin_study.Kotlin_algorithm.NK.Tree_Java;
+
+
 
 public class bm36 {
 
@@ -13,9 +15,9 @@ public class bm36 {
 
         if (root == null)return 0;
 
-        int left = judge(root.getLeft());
+        int left = judge(root.left);
         if (!isBalance)return left;
-        int right = judge(root.getRight());
+        int right = judge(root.right);
         if (!isBalance)return right;
         if (Math.abs(left - right) > 1){
             isBalance = false;
